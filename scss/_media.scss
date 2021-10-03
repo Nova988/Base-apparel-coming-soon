@@ -1,0 +1,65 @@
+@media screen and (min-width: 1441px) {
+  html,
+  body {
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .logo {
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+
+  .header-text {
+    min-height: 0px;
+    padding-top: 0;
+    padding-left: 4rem;
+    max-width: 100%;
+  }
+
+  .header-title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  html,
+  body {
+    background: linear-gradient($gradient1);
+    overflow-x: hidden;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    padding: 2rem 4rem 2rem;
+  }
+
+  .header-hero {
+    background: url("../images/hero-mobile.jpg") no-repeat top left/cover;
+    min-height: 250px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
+  .header-text {
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .header-title {
+    line-height: 1;
+  }
+
+  #error-message {
+    text-align: left;
+  }
+}

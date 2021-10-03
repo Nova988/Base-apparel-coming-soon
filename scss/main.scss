@@ -1,0 +1,111 @@
+@import "variables";
+@import "main-styles";
+
+// Header
+#main-header {
+  min-height: 100vh;
+}
+
+.header-text {
+  min-height: calc(100vh - 168px);
+  padding: 4rem 4rem 4rem 9rem;
+  max-width: 80%;
+  color: $desaturatedRed;
+  grid-column: 1/2;
+}
+
+.logo {
+  padding: 4rem 4rem 4rem 9rem;
+  grid-column: 1/2;
+}
+
+.header-title {
+  color: $darkGrayishRed;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  line-height: 1.2;
+
+  span {
+    font-weight: 300;
+    color: $desaturatedRed;
+  }
+}
+
+p {
+  line-height: 1.6;
+  padding-bottom: 3rem;
+}
+
+// Hero
+
+.header-hero {
+  background: url("../images/hero-desktop.jpg") no-repeat top center/cover;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+// input field
+.input-field {
+  position: relative;
+  max-width: 100%;
+  border: 1px solid $desaturatedRed;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  input {
+    background: transparent;
+    border: none;
+    padding: 1rem 2rem;
+    outline: none;
+    flex-basis: 80%;
+
+    &::placeholder {
+      color: $desaturatedRed;
+    }
+
+    &:active .input-field {
+      border: 3px solid blue;
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    padding: 0.5rem 0.75rem;
+    background: linear-gradient($gradient2);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transform: scale(1.1);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// Error styling
+#error-icon {
+  position: absolute;
+  right: 30%;
+  top: 25%;
+}
+
+#error-message {
+  font-size: 0.8rem;
+  position: relative;
+  left: 1rem;
+  padding-top: 0.2rem;
+  color: $softRed;
+}
+
+@import "media";
